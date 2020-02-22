@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
     }
-
+    @IBOutlet weak var bt: UIButton!
+    
     
     @IBAction func RandomNumber(_ sender: UIButton) {
         resultLabel.text = String(Int.random(in: 0 ..< 1000))
